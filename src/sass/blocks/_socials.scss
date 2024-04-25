@@ -1,0 +1,30 @@
+.socials {
+    position: fixed;
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(-90deg);
+    left: -100px;
+    top: 385px;
+    z-index: 2;
+    &__text {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+    &__divider {
+        width: 70px;
+        height: 2px;
+        background-color: #000;
+    }
+    &__link {
+        margin-right: 10px;
+        &:hover {
+            text-decoration: none;
+        }
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+}

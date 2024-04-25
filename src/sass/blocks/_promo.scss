@@ -1,0 +1,58 @@
+.promo {
+    padding-top: 200px;
+    min-height: 100vh;
+    background: url(../img/main_bg.jpg) no-repeat 50% / cover;
+    position: relative;
+    .subtitle {
+        padding-top: 6px;
+        padding-left: 12px;
+        position: relative;
+        @include yellow-circle;
+    }
+    &__hamburger {
+        height: 21px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        cursor: pointer;
+        &-line {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #151812;
+            &--long {
+                width: 36px;
+            }
+        }
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 60px;
+        color: #000;
+        margin-top: 10px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 25px;
+    }
+    &__button {
+        padding-left: 45px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 14px;
+        color: #000;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+}
